@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;netstandard2.1;netcoreapp3.1;net461;net5.0;net6.0</TargetFrameworks>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Joel Christner</Authors>
+    <Product>EventMd</Product>
+    <Description>Simple class structure for event metadata</Description>
+    <Copyright>(c)2022 Joel Christner</Copyright>
+    <PackageProjectUrl>https://github.com/jchristn/EventMd</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/jchristn/EventMd</RepositoryUrl>
+    <RepositoryType>github</RepositoryType>
+    <PackageTags>event metadata</PackageTags>
+    <Version>1.0.0.5</Version>
+    <PackageIcon>icon.png</PackageIcon>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>EventMd.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>EventMd.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="OpenAuditLog" Version="1.0.0.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Assets\icon.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="Assets\icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>

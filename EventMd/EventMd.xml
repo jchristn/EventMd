@@ -1,0 +1,276 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EventMd</name>
+    </assembly>
+    <members>
+        <member name="T:EventMd.EventMetadata">
+            <summary>
+            Event metadata.
+            </summary>
+        </member>
+        <member name="P:EventMd.EventMetadata.Identity">
+            <summary>
+            Identity.
+            </summary>
+        </member>
+        <member name="P:EventMd.EventMetadata.Source">
+            <summary>
+            Source.
+            </summary>
+        </member>
+        <member name="P:EventMd.EventMetadata.Target">
+            <summary>
+            Target.
+            </summary>
+        </member>
+        <member name="P:EventMd.EventMetadata.Resource">
+            <summary>
+            Resource.
+            </summary>
+        </member>
+        <member name="P:EventMd.EventMetadata.Metadata">
+            <summary>
+            Metadata.
+            </summary>
+        </member>
+        <member name="P:EventMd.EventMetadata.Type">
+            <summary>
+            Event type.
+            </summary>
+        </member>
+        <member name="P:EventMd.EventMetadata.Result">
+            <summary>
+            Event result.
+            </summary>
+        </member>
+        <member name="P:EventMd.EventMetadata.ContentLength">
+            <summary>
+            Content length.
+            </summary>
+        </member>
+        <member name="P:EventMd.EventMetadata.TimestampUtc">
+            <summary>
+            Timestamp of the event.
+            </summary>
+        </member>
+        <member name="M:EventMd.EventMetadata.#ctor">
+            <summary>
+            Instantiate the object.
+            </summary>
+        </member>
+        <member name="M:EventMd.EventMetadata.#ctor(EventMd.IdentityContext,EventMd.SourceContext,EventMd.TargetContext,EventMd.ResourceContext,System.Object,System.String,OpenAuditLog.EventResult,System.Int64)">
+            <summary>
+            Instantiate the object.
+            </summary>
+            <param name="identity">Identity.</param>
+            <param name="source">Source.</param>
+            <param name="target">Target.</param>
+            <param name="resource">Resource.</param>
+            <param name="metadata">Metadata.</param>
+            <param name="eventType">Event type.</param>
+            <param name="result">Result.</param>
+            <param name="contentLength">Content length.</param>
+        </member>
+        <member name="M:EventMd.EventMetadata.ToAuditLogEntry">
+            <summary>
+            Create an audit log entry from the event metadata.
+            </summary>
+            <returns>Audit log entry.</returns>
+        </member>
+        <member name="T:EventMd.IdentityContext">
+            <summary>
+            Identity.
+            </summary>
+        </member>
+        <member name="P:EventMd.IdentityContext.GUID">
+            <summary>
+            GUID.
+            </summary>
+        </member>
+        <member name="P:EventMd.IdentityContext.Name">
+            <summary>
+            Name.
+            </summary>
+        </member>
+        <member name="P:EventMd.IdentityContext.GroupGUID">
+            <summary>
+            Group GUID.
+            </summary>
+        </member>
+        <member name="P:EventMd.IdentityContext.GroupName">
+            <summary>
+            Group name.
+            </summary>
+        </member>
+        <member name="P:EventMd.IdentityContext.Metadata">
+            <summary>
+            Metadata.
+            </summary>
+        </member>
+        <member name="M:EventMd.IdentityContext.#ctor">
+            <summary>
+            Instantiate the object.
+            </summary>
+        </member>
+        <member name="M:EventMd.IdentityContext.#ctor(System.String,System.String,System.Object)">
+            <summary>
+            Instantiate the object.
+            </summary>
+            <param name="guid">GUID.</param>
+            <param name="name">Name.</param>
+            <param name="md">Metadata.</param>
+        </member>
+        <member name="M:EventMd.IdentityContext.#ctor(System.String,System.String,System.String,System.String,System.Object)">
+            <summary>
+            Instantiate the object.
+            </summary>
+            <param name="guid">GUID.</param>
+            <param name="name">Name.</param>
+            <param name="groupGuid">Group GUID.</param>
+            <param name="groupName">Group name.</param>
+            <param name="md">Metadata.</param>
+        </member>
+        <member name="T:EventMd.ResourceContext">
+            <summary>
+            Resource.
+            </summary>
+        </member>
+        <member name="P:EventMd.ResourceContext.GUID">
+            <summary>
+            GUID.
+            </summary>
+        </member>
+        <member name="P:EventMd.ResourceContext.Name">
+            <summary>
+            Name.
+            </summary>
+        </member>
+        <member name="P:EventMd.ResourceContext.Container">
+            <summary>
+            Container.
+            </summary>
+        </member>
+        <member name="P:EventMd.ResourceContext.Object">
+            <summary>
+            Object.
+            </summary>
+        </member>
+        <member name="P:EventMd.ResourceContext.Uri">
+            <summary>
+            URI.
+            </summary>
+        </member>
+        <member name="P:EventMd.ResourceContext.Metadata">
+            <summary>
+            Metadata.
+            </summary>
+        </member>
+        <member name="M:EventMd.ResourceContext.#ctor">
+            <summary>
+            Instantiate the object.
+            </summary>
+        </member>
+        <member name="M:EventMd.ResourceContext.#ctor(System.String,System.String,System.String,System.String,System.String,System.Object)">
+            <summary>
+            Instantiate the object.
+            </summary>
+            <param name="guid">GUID.</param>
+            <param name="name">Name.</param>
+            <param name="container">Container.</param>
+            <param name="obj">Object.</param>
+            <param name="uri">URI.</param>
+            <param name="md">Metadata.</param>
+        </member>
+        <member name="T:EventMd.SourceContext">
+            <summary>
+            Source.
+            </summary>
+        </member>
+        <member name="P:EventMd.SourceContext.GUID">
+            <summary>
+            GUID.
+            </summary>
+        </member>
+        <member name="P:EventMd.SourceContext.Name">
+            <summary>
+            Name.
+            </summary>
+        </member>
+        <member name="P:EventMd.SourceContext.IpAddress">
+            <summary>
+            IP address.
+            </summary>
+        </member>
+        <member name="P:EventMd.SourceContext.Hostname">
+            <summary>
+            Hostname.
+            </summary>
+        </member>
+        <member name="P:EventMd.SourceContext.Metadata">
+            <summary>
+            Metadata.
+            </summary>
+        </member>
+        <member name="M:EventMd.SourceContext.#ctor">
+            <summary>
+            Instantiate the object.
+            </summary>
+        </member>
+        <member name="M:EventMd.SourceContext.#ctor(System.String,System.String,System.String,System.String,System.Object)">
+            <summary>
+            Instantiate the object.
+            </summary>
+            <param name="guid">GUID.</param>
+            <param name="name">Name.</param>
+            <param name="ipAddress">IP address.</param>
+            <param name="hostname">Hostname.</param>
+            <param name="md">Metadata.</param>
+        </member>
+        <member name="T:EventMd.TargetContext">
+            <summary>
+            Target.
+            </summary>
+        </member>
+        <member name="P:EventMd.TargetContext.GUID">
+            <summary>
+            GUID.
+            </summary>
+        </member>
+        <member name="P:EventMd.TargetContext.Name">
+            <summary>
+            Name.
+            </summary>
+        </member>
+        <member name="P:EventMd.TargetContext.IpAddress">
+            <summary>
+            IP address.
+            </summary>
+        </member>
+        <member name="P:EventMd.TargetContext.Hostname">
+            <summary>
+            Hostname.
+            </summary>
+        </member>
+        <member name="P:EventMd.TargetContext.Metadata">
+            <summary>
+            Metadata.
+            </summary>
+        </member>
+        <member name="M:EventMd.TargetContext.#ctor">
+            <summary>
+            Instantiate the object.
+            </summary>
+        </member>
+        <member name="M:EventMd.TargetContext.#ctor(System.String,System.String,System.String,System.String,System.Object)">
+            <summary>
+            Instantiate the object.
+            </summary>
+            <param name="guid">GUID.</param>
+            <param name="name">Name.</param>
+            <param name="ipAddress">IP address.</param>
+            <param name="hostname">Hostname.</param>
+            <param name="md">Metadata.</param>
+        </member>
+    </members>
+</doc>
